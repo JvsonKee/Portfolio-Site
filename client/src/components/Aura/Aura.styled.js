@@ -11,7 +11,7 @@ export const AuraContainer = styled.div`
         border-radius: 50%;
         background-image: linear-gradient(60deg, rgba(86, 128, 76, 1), rgba(58, 94, 88, 1));
         filter: blur(80px);
-        animation: down 40s infinite;
+        animation: down 30s infinite;
     }
 
     #down {
@@ -22,7 +22,7 @@ export const AuraContainer = styled.div`
         border-radius: 50%;
         background-image: linear-gradient(80deg, rgba(158, 173, 116, 0.5), rgba(152, 119, 57, 0.5));
         filter: blur(80px);
-        animation: up 40s infinite;
+        animation: up 30s infinite;
     }
 
     #left {
@@ -33,7 +33,7 @@ export const AuraContainer = styled.div`
         border-radius: 50%;
         background-image: linear-gradient(50deg, rgba(57, 152, 72, 1), rgba(124, 116, 173, 0.8));
         filter: blur(80px);
-        animation: left 40s infinite;
+        animation: left 30s infinite;
     }
 
     #right {
@@ -44,7 +44,7 @@ export const AuraContainer = styled.div`
         border-radius: 50%;
         background-image: linear-gradient(80deg, rgba(98, 105, 169, 0.5), rgba(166, 139, 97, 0.4));
         filter: blur(80px);
-        animation: right 40s infinite;
+        animation: right 30s infinite;
     }
 
 
