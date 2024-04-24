@@ -24,7 +24,7 @@ function About() {
                     <br /> 
                     <ResumeLink href="">
                         <ResumeContainer>
-                            <span>Resume</span> 
+                            <span>Résumé</span> 
                             <Icon icon={faArrowUpRightFromSquare} className="arrow"/>
                         </ResumeContainer>
                     </ResumeLink>
