@@ -3,8 +3,9 @@ import styled from "styled-components";
 export const PageContainer = styled.div`
     display: flex;
     justify-content: center;
-    width: 100%;
+    max-width: 100%;
     min-height: 100vh;
+    overflow-x: hidden;
     background-image: linear-gradient(80deg, var(--dark-green), var(--dark-green));
 `
 
