@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { NavContainer, NavItem, NavWrapper } from "./NavBar.styled"
+import { NavContainer, NavItem, NavWrapper } from "./NavBar.styled";
 
-function NavBar() {
+function NavBar( {sendToParent} ) {
     const [scrollStyle, setScrollStyle] = useState("none");
+    const [current, setCurrent] = useState("about");
 
     window.addEventListener("scroll", function() {
         if (window.scrollY > 20) {
@@ -13,12 +14,17 @@ function NavBar() {
         }
     });
 
+    function onClick(page) {
+        sendToParent(page);
+        setCurrent(page);
+    }
+
     return (
         <NavContainer>
             <NavWrapper className={scrollStyle}>
-                <NavItem to="/">Home</NavItem>
-                <NavItem to="/projects">Projects</NavItem>
-                <NavItem to="/contact">Contact</NavItem>
+                <NavItem onClick={() => onClick("about")} className={current === "about" ? "current" : null} >Home</NavItem>
+                <NavItem onClick={() => onClick("projects")} className={current === "projects" ? "current" : null}>Projects</NavItem>
+                <NavItem onClick={() => onClick("contact")} className={current === "contact" ? "current" : null}>Contact</NavItem>
             </NavWrapper>
         </NavContainer>
     )

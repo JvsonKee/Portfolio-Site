@@ -1,5 +1,4 @@
-import styled from "styled-components"
-import { NavLink } from "react-router-dom"
+import styled from "styled-components";
 
 export const NavContainer = styled.div`
     position: fixed;
@@ -27,9 +26,13 @@ export const NavContainer = styled.div`
 
 export const NavWrapper = styled.div`
     display: flex;
+
+    .current {
+        color: var(--teal);
+    }
 `
 
-export const NavItem = styled(NavLink)`
+export const NavItem = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,6 +46,7 @@ export const NavItem = styled(NavLink)`
     transition: 0.3s ease-in-out;
 
     &:hover {
+        cursor: pointer;
         color: var(--teal);
     }
 `
