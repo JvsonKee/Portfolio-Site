@@ -6,7 +6,7 @@ import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 function Contact() {
     return (
         <ContentWrapper>
-            <PageIntro bigString={"Contact"} smallString={"Feel free to leave me a message — I'm always eager to connect and explore potential opportunities!"}/>
+            <PageIntro bigString={"Contact Me."} smallString={"Feel free to leave me a message — I'm always eager to connect and explore potential opportunities!"}/>
             <Link href="mailto: matthias.kee@outlook.com">
                 <EmailContainer>
                     <Email>matthias.kee@outlook.com</Email>
