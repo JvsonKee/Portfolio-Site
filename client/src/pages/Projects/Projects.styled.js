@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { ContentWrapper } from "../../styles/Containers";
 
 export const ProjectsWrapper = styled(ContentWrapper)`
-    margin: 250px 0 100px 0;
-    gap: 90px;
+    margin: 200px 0 100px 0;
+    gap: 130px;
 `
 
 export const ProjectsCardsContainer = styled.div`
