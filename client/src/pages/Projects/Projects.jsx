@@ -38,22 +38,15 @@ const projects = {
 
 function Projects() {
     return(
-        <PageContainer>
-            <Aura />
-            <ContentContainer>
-                <NavBar />
-                <ProjectsWrapper>
-                    <PageIntro bigString={"My Projects."} smallString={"A portfolio of projects and sites I've created. Designed to be innovative, helpful and fun."}/>
-                    <ProjectsCardsContainer>
-                        <Card label={"Spotify Profile"} description={projects.spotify.description} tags={projects.spotify.tags} images={projects.spotify.images} width={"59%"}/>
-                        <Card label={"Real Estate Web Scraper"} description={projects.scraper.description} tags={projects.scraper.tags} images={projects.scraper.images} width={"39%"} />
-                        <Card label={"Maze Runners"} description={projects.maze.description} tags={projects.maze.tags} images={projects.maze.images} width={"39%"} />
-                        <Card label={"Dime"} description={projects.dime.description} tags={projects.dime.tags} images={projects.dime.images} width={"59%"} /> 
-                    </ProjectsCardsContainer>
-                </ProjectsWrapper>
-                <Footer />
-            </ContentContainer>
-        </PageContainer>
+        <ProjectsWrapper>
+            <PageIntro bigString={"My Projects."} smallString={"A portfolio of projects and sites I've created. Designed to be innovative, helpful and fun."}/>
+            <ProjectsCardsContainer>
+                <Card label={"Spotify Profile"} description={projects.spotify.description} tags={projects.spotify.tags} images={projects.spotify.images} width={"59%"}/>
+                <Card label={"Real Estate Web Scraper"} description={projects.scraper.description} tags={projects.scraper.tags} images={projects.scraper.images} width={"39%"} />
+                <Card label={"Maze Runners"} description={projects.maze.description} tags={projects.maze.tags} images={projects.maze.images} width={"39%"} />
+                <Card label={"Dime"} description={projects.dime.description} tags={projects.dime.tags} images={projects.dime.images} width={"59%"} /> 
+            </ProjectsCardsContainer>
+        </ProjectsWrapper>
     )
 }
 
