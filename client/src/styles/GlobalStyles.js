@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
         --lime-green: #B7F0A3;
         --yellow: #FFD37D;
         --purple: #F0B5FF;
-        --teal: #8EFFCA;
+        --teal: #5FEBA9;
         --white: #CEFFE8;
         --tag: rgba(96, 163, 135, 0.74);
         --nav-active-bg: rgba(217, 217, 217, 0.2);
