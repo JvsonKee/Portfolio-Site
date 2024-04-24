@@ -1,18 +1,18 @@
-import Aura from "../../components/Aura/Aura";
-import Footer from "../../components/Footer/Footer";
-import NavBar from "../../components/NavBar/NavBar";
 import PageIntro from "../../components/PageIntro/PageIntro";
-import { ContentContainer, PageContainer, ContentWrapper } from "../../styles/Containers";
-import { AboutContainer, AboutDescription, AboutHeader, Icon, Left, ResumeContainer, ResumeLink, Right } from "./Home.styled";
+import { ContentWrapper } from "../../styles/Containers";
+import { AboutContainer, AboutDescription, AboutHeader, Icon, ImageContainer, Left, ProfilePicture, ResumeContainer, ResumeLink, Right } from "./Home.styled";
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
- 
+import profileImg from '../../assets/images/jason.png';
+
 function About() {
     return (
         <ContentWrapper>
-            <PageIntro bigString={"Hi! I'm Matthias." + " A Developer."} smallString={"I'm passionate about crafting elegant web applications and beautiful experiences."}/>
+            <PageIntro bigString={"Hi! I'm Matthias."} smallString={"I'm passionate about crafting elegant web applications and beautiful experiences."}/>
             <AboutContainer>
                 <Left>
-
+                    <ImageContainer>
+                        <ProfilePicture src={profileImg}/>
+                    </ImageContainer>
                 </Left>
                 <Right>
                     <AboutHeader>About me</AboutHeader>

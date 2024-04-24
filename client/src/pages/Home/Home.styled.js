@@ -7,7 +7,26 @@ export const AboutContainer = styled.div`
 `
 
 export const Left = styled.div`
+    display: flex;
+    justify-content: center;
     width: 50%;
+`
+export const ImageContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 80%;
+    padding: 3px;
+    border-radius: 100px 100px 0 0;
+    /* background-color: var(--purple); */
+    background-color: #FF975D;
+`
+export const ProfilePicture = styled.img`
+    border-radius: 97px 97px 0 0;
+    width: 98%;
+    height: 98%;
+    object-fit: cover;
 `
 
 export const Right = styled.div`
