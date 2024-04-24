@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const PageContainer = styled.div`
     display: flex;
@@ -19,6 +19,6 @@ export const ContentWrapper = styled.div`
     display: flex;  
     align-items: center;
     flex-direction: column;
-    gap: 80px;
+    gap: 100px;
     margin: 200px 0 50px 0;
 `
