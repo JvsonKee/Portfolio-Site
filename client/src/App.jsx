@@ -15,8 +15,6 @@ function App() {
 		setPage(data);
 	}
 
-	console.log({page})
-
 	return (
 		<PageContainer>
 			<Aura />
