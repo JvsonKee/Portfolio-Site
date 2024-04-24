@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 export const NavContainer = styled.div`
     position: fixed;
+    align-self: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
     height: 100px;
 
     & a.active {
@@ -26,6 +26,14 @@ export const NavContainer = styled.div`
 
 export const NavWrapper = styled.div`
     display: flex;
+
+    @media screen and (max-width: 860px) {
+        width: 300px;
+
+        div {
+            font-size: 16px;
+        }
+    }
 
     .current {
         color: var(--teal);

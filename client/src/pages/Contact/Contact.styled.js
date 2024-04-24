@@ -17,6 +17,10 @@ export const EmailContainer = styled.div`
     gap: 15px;
     font-family: var(--sora-font);
     font-size: 40px;
+
+    @media screen and (max-width: 600px) {
+        font-size: 25px;
+    }
 `
 
 export const Icon = styled(FontAwesomeIcon)`

@@ -7,6 +7,18 @@ export const IntroductionContainer = styled.div`
     text-align: center;
     width: 70%;
     gap: 30px;
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+        
+        h1 {
+            font-size: 50px;
+        }
+
+        div {
+            font-size: 16px;
+        }
+    }
 `
 
 export const IntroductionBig = styled.h1`

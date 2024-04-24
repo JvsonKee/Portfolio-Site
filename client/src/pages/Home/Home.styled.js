@@ -4,7 +4,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export const AboutContainer = styled.div`
     display: flex;
     width: 90%;
-    /* background-color: green; */
+
+    @media screen and (max-width: 860px) {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 700px;
+        gap: 10px;
+    }
+
+    @media screen and (max-width: 700px) {
+        height: 500px;
+    }
 `
 
 export const Left = styled.div`
@@ -12,6 +23,15 @@ export const Left = styled.div`
     align-items: center;
     justify-content: center;
     width: 50%;
+
+    @media screen and (max-width: 860px) {
+        height: 50%;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 600px) {
+        height: 20%;
+    }
 `
 export const ImageContainer = styled.div`
     display: flex;
@@ -22,6 +42,15 @@ export const ImageContainer = styled.div`
     padding: 3px;
     border-radius: 100px 100px 0 0;
     background-color: #FF975D;
+
+    @media screen and (max-width: 860px) {
+        width: 100%;
+        border-radius: 0px;
+
+        img {
+            border-radius: 0px;
+        }
+    }
 `
 export const ProfilePicture = styled.img`
     border-radius: 97px 97px 0 0;
@@ -37,6 +66,17 @@ export const Right = styled.div`
     gap: 10px;
     font-size: 17px;
     width: 50%;
+
+    @media screen and (max-width: 860px) {
+        justify-content: flex-start;
+        font-size: 14px;
+        width: 100%;
+        height: 50%;
+
+        div {
+            line-height: 20px;
+        }
+    }
 `
 
 export const AboutHeader = styled.h1`

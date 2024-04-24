@@ -25,6 +25,10 @@ export const CardContentContainer = styled.div`
     gap: 3%;
     width: 85%;
     height: 90%;
+
+    @media screen and (max-width: 700px) {
+        justify-content: space-evenly;
+    }
 `
 
 export const Top = styled.div`

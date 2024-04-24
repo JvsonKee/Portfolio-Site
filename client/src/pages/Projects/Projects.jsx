@@ -7,6 +7,7 @@ import mazeImage from '../../assets/images/maze.png';
 import dimeLogin from '../../assets/images/dime-login.png';
 import dimeHome from '../../assets/images/dime-home.png';
 import calgary from '../../assets/images/calgary.png';
+import { useEffect, useState } from "react";
 
 
 const projects = {
@@ -33,23 +34,45 @@ const projects = {
 }
 
 function Projects() {
+
+    let check;
+
+    if (window.innerWidth <= 600) {
+        check = true;
+    }
+    console.log(window.innerWidth)
+    const [isMobile, setIsMobile]  = useState(check);
+
+    const handleResize = () => {
+        if (window.innerWidth <= 600) {
+            setIsMobile(true)
+        } else {
+            setIsMobile(false)
+        }
+      }
+      
+      useEffect(() => {
+        window.addEventListener("resize", handleResize)
+      })
+
+
     return(
         <ProjectsWrapper>
             <PageIntro bigString={"My Projects."} smallString={"A portfolio of projects and sites I've created. Designed to be innovative, helpful and fun."}/>
             <ProjectsCardsContainer>
-                <Link href="https://github.com/JvsonKee/Spotify-Project" target="blank" style={{width: "59%", marginBottom: "35px"}}>
+                <Link href="https://github.com/JvsonKee/Spotify-Project" target="blank" style={ !isMobile ? {width: "59%", marginBottom: "35px"} : {width: "100%", marginBottom: "35px"}}>
                     <Card label={"Spotify Profile"} description={projects.spotify.description} tags={projects.spotify.tags} images={projects.spotify.images} />
                 </Link>
 
-                <Link href="https://github.com/JvsonKee/calgary-real-estate-scraper" target="blank" style={{width: "39%", marginBottom: "35px"}}>
+                <Link href="https://github.com/JvsonKee/calgary-real-estate-scraper" target="blank" style={ !isMobile ?{width: "39%", marginBottom: "35px"} : {width: "100%", marginBottom: "35px"}}>
                     <Card label={"Real Estate Web Scraper"} description={projects.scraper.description} tags={projects.scraper.tags} images={projects.scraper.images}/>
                 </Link>
 
-                <Link href="https://github.com/JvsonKee/Maze-Runners" target="blank" style={{width: "39%"}}>
+                <Link href="https://github.com/JvsonKee/Maze-Runners" target="blank" style={ !isMobile ? {width: "39%"} : {width: "100%", marginBottom: "35px"}}>
                     <Card label={"Maze Runners"} description={projects.maze.description} tags={projects.maze.tags} images={projects.maze.images}/>
                 </Link>
 
-                <Link href="https://github.com/JvsonKee/Dime-CPSC471" target="blank" style={{width: "59%"}}>
+                <Link href="https://github.com/JvsonKee/Dime-CPSC471" target="blank" style={ !isMobile ? {width: "59%"} : {width: "100%", marginBottom: "35px"}}>
                     <Card label={"Dime"} description={projects.dime.description} tags={projects.dime.tags} images={projects.dime.images}/> 
                 </Link>
             </ProjectsCardsContainer>
