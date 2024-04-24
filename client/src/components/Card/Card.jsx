@@ -1,5 +1,5 @@
-import { Bottom, CardContainer, CardContentContainer, CardDescription, CardLabel, Image, TagContainer, TagHolder, Top } from "./Card.styled"
-import propTypes from 'prop-types'
+import { Bottom, CardContainer, CardContentContainer, CardDescription, CardLabel, Image, TagContainer, TagHolder, Top } from "./Card.styled";
+import propTypes from 'prop-types';
 
 function Card( {width, label, description, tags, images} ) {
 

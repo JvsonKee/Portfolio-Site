@@ -1,5 +1,5 @@
-import { useState } from "react"
-import About from "./pages/Home/Home"
+import { useState } from "react";
+import About from "./pages/Home/Home";
 import { ContentContainer, PageContainer } from "./styles/Containers";
 import Aura from "./components/Aura/Aura";
 import NavBar from "./components/NavBar/NavBar";

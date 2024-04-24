@@ -1,16 +1,12 @@
 import Card from "../../components/Card/Card";
-import NavBar from "../../components/NavBar/NavBar";
 import PageIntro from "../../components/PageIntro/PageIntro";
-import { ContentContainer, PageContainer } from "../../styles/Containers";
-import { ProjectsCardsContainer, ProjectsWrapper } from "./Projects.styled";
+import { ProjectsCardsContainer, ProjectsWrapper, Link } from "./Projects.styled";
 import profileImage from '../../assets/images/spotify-profile.png';
 import spotifySong from '../../assets/images/spotify-song.png';
 import mazeImage from '../../assets/images/maze.png';
 import dimeLogin from '../../assets/images/dime-login.png';
 import dimeHome from '../../assets/images/dime-home.png';
 import calgary from '../../assets/images/calgary.png';
-import Footer from "../../components/Footer/Footer";
-import Aura from "../../components/Aura/Aura";
 
 
 const projects = {
@@ -41,10 +37,21 @@ function Projects() {
         <ProjectsWrapper>
             <PageIntro bigString={"My Projects."} smallString={"A portfolio of projects and sites I've created. Designed to be innovative, helpful and fun."}/>
             <ProjectsCardsContainer>
-                <Card label={"Spotify Profile"} description={projects.spotify.description} tags={projects.spotify.tags} images={projects.spotify.images} width={"59%"}/>
-                <Card label={"Real Estate Web Scraper"} description={projects.scraper.description} tags={projects.scraper.tags} images={projects.scraper.images} width={"39%"} />
-                <Card label={"Maze Runners"} description={projects.maze.description} tags={projects.maze.tags} images={projects.maze.images} width={"39%"} />
-                <Card label={"Dime"} description={projects.dime.description} tags={projects.dime.tags} images={projects.dime.images} width={"59%"} /> 
+                <Link href="https://github.com/JvsonKee/Spotify-Project" target="blank" style={{width: "59%", marginBottom: "35px"}}>
+                    <Card label={"Spotify Profile"} description={projects.spotify.description} tags={projects.spotify.tags} images={projects.spotify.images} />
+                </Link>
+
+                <Link href="https://github.com/JvsonKee/calgary-real-estate-scraper" target="blank" style={{width: "39%", marginBottom: "35px"}}>
+                    <Card label={"Real Estate Web Scraper"} description={projects.scraper.description} tags={projects.scraper.tags} images={projects.scraper.images}/>
+                </Link>
+
+                <Link href="https://github.com/JvsonKee/Maze-Runners" target="blank" style={{width: "39%"}}>
+                    <Card label={"Maze Runners"} description={projects.maze.description} tags={projects.maze.tags} images={projects.maze.images}/>
+                </Link>
+
+                <Link href="https://github.com/JvsonKee/Dime-CPSC471" target="blank" style={{width: "59%"}}>
+                    <Card label={"Dime"} description={projects.dime.description} tags={projects.dime.tags} images={projects.dime.images}/> 
+                </Link>
             </ProjectsCardsContainer>
         </ProjectsWrapper>
     )

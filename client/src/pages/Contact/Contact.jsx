@@ -1,7 +1,5 @@
-import Aura from "../../components/Aura/Aura"
-import NavBar from "../../components/NavBar/NavBar"
 import PageIntro from "../../components/PageIntro/PageIntro"
-import { ContentContainer, ContentWrapper, PageContainer } from "../../styles/Containers"
+import { ContentWrapper } from "../../styles/Containers"
 import { Email, EmailContainer, Icon, Link, Platforms } from "./Contact.styled"
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
