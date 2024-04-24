@@ -4,10 +4,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export const AboutContainer = styled.div`
     display: flex;
     width: 90%;
+    /* background-color: green; */
 `
 
 export const Left = styled.div`
     display: flex;
+    align-items: center;
     justify-content: center;
     width: 50%;
 `
@@ -16,10 +18,9 @@ export const ImageContainer = styled.div`
     align-items: center;
     justify-content: center;
     width: 60%;
-    height: 80%;
+    height: 90%;
     padding: 3px;
     border-radius: 100px 100px 0 0;
-    /* background-color: var(--purple); */
     background-color: #FF975D;
 `
 export const ProfilePicture = styled.img`
@@ -31,8 +32,9 @@ export const ProfilePicture = styled.img`
 
 export const Right = styled.div`
     display: flex;
-    gap: 10px;
     flex-direction: column;
+    justify-content: center;
+    gap: 10px;
     font-size: 17px;
     width: 50%;
 `
