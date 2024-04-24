@@ -10,8 +10,10 @@ export const ProjectsCardsContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: 4%;
     width: 100%;
     padding: 10px 0;
 `
 
+export const Link = styled.a`
+    text-decoration: none;
+`
