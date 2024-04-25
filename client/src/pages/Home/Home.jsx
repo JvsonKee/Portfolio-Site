@@ -3,6 +3,7 @@ import { ContentWrapper } from "../../styles/Containers";
 import { AboutContainer, AboutDescription, AboutHeader, Icon, ImageContainer, Left, ProfilePicture, ResumeContainer, ResumeLink, Right } from "./Home.styled";
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import profileImg from '../../assets/images/jason.png';
+import resume from '../../assets/matthiaskee_resume.pdf';
 
 function About() {
     return (
@@ -22,7 +23,7 @@ function About() {
                         I am eager to translate my theoretical knowledge into real-world solutions. My experiences have equipped me with a robust foundation in programming languages, algorithms, and software development methodologies, empowering me to tackle complex problems with confidence and creativity. My goal is to leverage my skills to create innovative solutions that positively impact the world around us. 
                     </AboutDescription>
                     <br /> 
-                    <ResumeLink href="">
+                    <ResumeLink href={resume} target="blank">
                         <ResumeContainer>
                             <span>Résumé</span> 
                             <Icon icon={faArrowUpRightFromSquare} className="arrow"/>
