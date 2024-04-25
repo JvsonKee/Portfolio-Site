@@ -3,10 +3,6 @@ import styled from "styled-components";
 export const AuraContainer = styled.div`
     overflow: hidden;
 
-    section {
-        
-    }
-
     #up {
         position: absolute;
         height: 1000px;
