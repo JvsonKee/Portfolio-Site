@@ -9,39 +9,42 @@ export const AboutContainer = styled.div`
         flex-direction: column;
         align-items: center;
         width: 100%;
-        height: 700px;
-        gap: 10px;
+        height: 450px;
+        gap: 15px;
     }
 
     @media screen and (max-width: 700px) {
-        height: 500px;
+        height: 550px;
     }
 `
 
 export const Left = styled.div`
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 40%;
 
     @media screen and (max-width: 860px) {
-        height: 50%;
         width: 100%;
+        height: 40%;
     }
 
     @media screen and (max-width: 600px) {
-        height: 20%;
+        height: 25%;
     }
 `
 export const ImageContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60%;
-    height: 90%;
+    width: 55%;
+    height: 98%;
     padding: 3px;
     border-radius: 100px 100px 0 0;
     background-color: #FF975D;
+
+    @media screen and (max-width: 1200px) {
+        width: 75%;
+    }
 
     @media screen and (max-width: 860px) {
         width: 100%;
@@ -65,17 +68,22 @@ export const Right = styled.div`
     justify-content: center;
     gap: 10px;
     font-size: 17px;
-    width: 50%;
+    width: 60%;
+    height: 100%;
 
     @media screen and (max-width: 860px) {
         justify-content: flex-start;
         font-size: 14px;
         width: 100%;
-        height: 50%;
+        height: 60%;
 
         div {
             line-height: 20px;
         }
+    }
+
+    @media screen and (max-width: 600px) {
+        height: 75%;
     }
 `
 
@@ -108,7 +116,6 @@ export const ResumeLink = styled.a`
             transform: translateX(2px) translateY(-2px)
         }
     }
-
 `
 
 export const Icon = styled(FontAwesomeIcon)`

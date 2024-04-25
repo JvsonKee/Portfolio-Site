@@ -21,15 +21,12 @@ export const FooterContainer = styled.div`
 
 export const Left = styled.div`
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    align-items: flex-end;
+    gap: 15px;
     width: 50%;
 
     @media screen and (max-width: 860px) {
-        flex-direction: row;
-        align-items: flex-end;
         justify-content: flex-start;
-        gap: 10px;
     }
 
     @media screen and (max-width: 700px) {
@@ -76,6 +73,7 @@ export const Icon = styled(FontAwesomeIcon)`
 export const Right = styled.div`
     display: flex;
     align-items: flex-end;
+    justify-content: flex-end;
     width: 50%;
 
     div {
@@ -84,6 +82,7 @@ export const Right = styled.div`
     }
 
     @media screen and (max-width: 860px) {
+        justify-content: flex-start;
         width: auto;
         font-size: 20px;
     }

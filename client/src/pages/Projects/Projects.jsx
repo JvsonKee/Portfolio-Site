@@ -37,14 +37,14 @@ function Projects() {
 
     let check;
 
-    if (window.innerWidth <= 600) {
+    if (window.innerWidth <= 1024) {
         check = true;
     }
     console.log(window.innerWidth)
     const [isMobile, setIsMobile]  = useState(check);
 
     const handleResize = () => {
-        if (window.innerWidth <= 600) {
+        if (window.innerWidth <= 1024) {
             setIsMobile(true)
         } else {
             setIsMobile(false)

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import About from "./pages/Home/Home";
-import { ContentContainer, PageContainer } from "./styles/Containers";
+import { Body, ContentContainer, PageContainer } from "./styles/Containers";
 import Aura from "./components/Aura/Aura";
 import NavBar from "./components/NavBar/NavBar";
 import Projects from "./pages/Projects/Projects";
@@ -20,15 +20,17 @@ function App() {
 			<Aura />
 			<ContentContainer>
 				<NavBar sendToParent={receiveData}/>
-				{
-					page === "about" ? <About />:
-					page === "projects" ? <Projects /> :
-					page === "contact" ? <Contact /> :
-					null
-				}
-				{
-					page === "about" || page === "projects" ? <Footer /> : null
-				}
+				<Body>
+					{
+						page === "about" ? <About />:
+						page === "projects" ? <Projects /> :
+						page === "contact" ? <Contact /> :
+						null
+					}
+					{
+						page === "about" || page === "projects" ? <Footer /> : null
+					}
+				</Body>
 			</ContentContainer>
 		</PageContainer>
 	)

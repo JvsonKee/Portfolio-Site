@@ -4,7 +4,7 @@ export const CardContainer = styled.div`
     display: flex;  
     justify-content: center;
     align-items: center;
-    height: 430px;
+    height: 500px;
     border-radius: 50px;
     background-color: #274A3C;
     border: 1px solid rgba(206, 255, 232, 0.25);
@@ -35,11 +35,13 @@ export const Top = styled.div`
     display: flex;
     flex-direction: column;
     gap: 10px;
+    height: 40%;
 `
 
 export const Bottom = styled.div`
     display: flex;
     justify-content: space-between;
+    height: 60%;
 `
 
 export const CardLabel = styled.h2`
@@ -51,7 +53,7 @@ export const CardLabel = styled.h2`
 export const CardDescription = styled.div`
     color: var(--white);
     font-family: var(--sora-font);
-    font-size: 16px;
+    font-size: clamp(14px, 1vh, 16px);
     line-height: 23px;
 `
 

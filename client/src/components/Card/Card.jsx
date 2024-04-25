@@ -33,6 +33,8 @@ function Card( {width, label, description, tags, images} ) {
                         images ? 
                         images.map((image, i) => (
                             <Image src={image} key={i} style={{width: `${imgWidth}%`}}/>
+                            // <Image src={image} key={i} />
+
                         )):
                         null
                     }
