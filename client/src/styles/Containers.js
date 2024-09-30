@@ -2,39 +2,42 @@ import styled from "styled-components";
 
 export const PageContainer = styled.div`
     display: flex;
-    justify-content: center;
-    max-width: 2500px;
-    min-height: 100vh;
-    overflow-x: hidden;
-    background-image: linear-gradient(80deg, var(--dark-green), var(--dark-green));
-`
-
-export const ContentContainer = styled.div`
-    z-index: 1;
-    display: flex;
     flex-direction: column;
-    width: 90%;
-
-    @media screen and (max-width: 820px) {
-        width: 95%;
-    }
-`
-
-export const ContentWrapper = styled.div`
-    display: flex;  
     align-items: center;
-    flex-direction: column;
-    gap: 80px;
-    margin: 200px 0 100px 0;
+`
 
-    @media screen and (max-width: 820px) {
-        margin: 130px 0 20px 0;
+export const SectionContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    min-height: 80vh;
+`
+
+export const SectionWrapper = styled.div`
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 100%;
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+        gap: 50px;
     }
 `
 
-export const Body = styled.div`
+export const SectionContentContainer = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+    gap: 20px;
+    width: 55%;
+
+    div {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+    }
 `
