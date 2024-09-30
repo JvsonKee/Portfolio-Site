@@ -1,33 +1,28 @@
-import { useState } from "react";
-import { NavContainer, NavItem, NavWrapper } from "./NavBar.styled";
+import { forwardRef } from "react";
+import { NavBarContainer, NavItems } from "./NavBar.styled";
 
-function NavBar( {sendToParent} ) {
-    const [scrollStyle, setScrollStyle] = useState("none");
-    const [current, setCurrent] = useState("about");
+const NavBar = forwardRef((props, ref) => {  
 
-    window.addEventListener("scroll", function() {
-        if (window.scrollY > 20) {
-            setScrollStyle("scroll");
-        }
-        if (window.scrollY < 20) {
-            setScrollStyle("none");
-        }
-    });
-
-    function onClick(page) {
-        sendToParent(page);
-        setCurrent(page);
+    const scrollToSection = (elementRef) => {
+        console.log("hello")
+        window.scrollTo({
+            top: elementRef.current.offsetTop,
+            behavior: "smooth"
+        })
     }
+    
+    console.log({ref})
 
     return (
-        <NavContainer>
-            <NavWrapper className={scrollStyle}>
-                <NavItem onClick={() => onClick("about")} className={current === "about" ? "current" : null} >Home</NavItem>
-                <NavItem onClick={() => onClick("projects")} className={current === "projects" ? "current" : null}>Projects</NavItem>
-                <NavItem onClick={() => onClick("contact")} className={current === "contact" ? "current" : null}>Contact</NavItem>
-            </NavWrapper>
-        </NavContainer>
+        <NavBarContainer>
+            <NavItems>
+                <div onClick={() => scrollToSection(ref[0])}>About</div>
+                <div onClick={() => scrollToSection(ref[1])}>Experience</div>
+                <div onClick={() => scrollToSection(ref[2])}>Projects</div>
+                <div onClick={() => scrollToSection(ref[3])}>Contact</div>
+            </NavItems>
+        </NavBarContainer>
     )
-}
+})
 
-export default NavBar
+export default NavBar;
