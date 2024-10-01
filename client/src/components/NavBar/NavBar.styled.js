@@ -18,4 +18,12 @@ export const NavItems = styled.div`
     div {
         cursor: pointer;
     }
+
+    @media screen and (max-width: 800px) {
+        width: 80%;
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 90%;
+    }
 `
