@@ -54,7 +54,7 @@ export const SubmitButton = styled.input`
     transition: 300ms ease-in-out;
 
     &:hover {
-        background-color: var(--dark-grey);
+        background-color: blue;
     }
 `
 
@@ -91,7 +91,7 @@ export const ResetButton = styled.div`
     }
 
     &:hover {
-        background-color: var(--dark-grey);
+        background-color: blue;
     }
 
     cursor: pointer;
