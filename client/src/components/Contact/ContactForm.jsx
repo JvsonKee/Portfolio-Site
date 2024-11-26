@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 const FormMatrix = styled.div`
     position: relative;
@@ -136,8 +136,6 @@ const ContactForm = () => {
 
     }
 
-
-    console.log({formRef})
     return (
         <FormMatrix>
             
