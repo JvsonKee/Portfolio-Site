@@ -14,14 +14,15 @@ export const ProjectInformationTop = styled.div`
 `
 
 export const ProjectTitle = styled.h2`
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
 `
 
 export const ProjectDescription = styled.div`
     width: 40%;
-    font-size: 14px;
+    font-size: 16px;
     color: var(--grey);
+    line-height: 1.5;
 
     @media screen and (max-width: 800px) {
         width: 100%;
@@ -71,6 +72,7 @@ export const TechnologiesContainer = styled.div`
 `
 
 export const TechnologiesHeader = styled.div`
+    font-size: 16px;
 `
 
 export const TechnologiesList = styled.div`
@@ -78,7 +80,7 @@ export const TechnologiesList = styled.div`
     gap: 10px;
 
     div {
-        font-size: 12px;
+        font-size: 14px;
     }
 `
 

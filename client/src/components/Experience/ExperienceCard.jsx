@@ -4,16 +4,13 @@ const ExperienceCardContainer = styled.div`
     display: flex;
     justify-content: space-between;
 
-    div {
-        font-size: 14px;
-    }
-
     @media screen and (max-width: 600px) {
         flex-direction: column;
     }
 `
 
 const ExperienceDate = styled.div`
+    font-size: 20px;
 
     @media screen and (max-width: 600px) {
         padding-bottom: 10px;
@@ -26,7 +23,7 @@ const CardInformation = styled.div`
     width: 70%;
      
     div {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     @media screen and (max-width: 600px) {
@@ -34,12 +31,14 @@ const CardInformation = styled.div`
     }
 `
 
-const ExperienceTitle = styled.h2`
-    font-size: 16px;
+const ExperienceTitle = styled.a`
+    font-size: 18px;
     font-weight: 400;
+    color: var(--black);
 `
 
 const ExperiencePosition = styled.div`
+    font-style: italic;
 `
 
 const ExperienceDescription = styled.div`
@@ -51,7 +50,7 @@ const ExperienceCard = ({data}) => {
         <ExperienceCardContainer>
             <ExperienceDate>{data.start} – {data.end}</ExperienceDate>
             <CardInformation>
-                <ExperienceTitle>{data.title}</ExperienceTitle>
+                <ExperienceTitle href="https://enlighten-media.com" target="_blank">{data.title}</ExperienceTitle>
                 <ExperiencePosition>{data.position}</ExperiencePosition>
                 <ExperienceDescription>{data.description}</ExperienceDescription>
             </CardInformation>
