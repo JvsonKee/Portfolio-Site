@@ -1,9 +1,10 @@
+import { forwardRef } from "react";
 import YSlide from "../../Animations/YSlide";
 import { InfoLine, IntroContainer, IntroHeader, IntroInformationWrapper, JobTitle, ScrollLine, ScrollWrapper } from "./HomeIntro.styled";
 
-const HomeIntro = () => {
+const HomeIntro = forwardRef((props, ref) => {
     return (
-        <IntroContainer>
+        <IntroContainer ref={ref}>
             <YSlide>
                 <IntroHeader>
                     <div>Matth–</div>
@@ -25,6 +26,6 @@ const HomeIntro = () => {
             </YSlide>
         </IntroContainer>
     )
-}
+})
 
 export default HomeIntro;
