@@ -1,9 +1,7 @@
-import { forwardRef, useState } from "react";
+import { forwardRef } from "react";
 import { NavBarContainer, NavItems } from "./NavBar.styled";
 
 const NavBar = forwardRef((props, ref) => {  
-
-    const [active, setActive] = useState("Home")
 
     const scrollToSection = (elementRef) => {
         window.scrollTo({
