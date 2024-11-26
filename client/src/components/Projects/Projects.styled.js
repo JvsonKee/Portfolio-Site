@@ -14,7 +14,7 @@ export const ProjectsWrapper = styled.div`
     flex-direction: column;
     gap: 100px;
     width: 90%;
-    margin: 100px 0;
+    margin: 100px auto;
 `
 
 export const ProjectsList = styled.div`

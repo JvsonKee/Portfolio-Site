@@ -13,10 +13,10 @@ import YSlide from "../../Animations/YSlide";
 const Projects = forwardRef((props, ref) => {
     const projects = [
         {
-            title: "Spotify Profile",
+            title: "TuneTeller",
             description: "A comprehensive web application leveraging the Spotify API, delivering personal insights into listening patterns and preferences",
             link: "https://github.com/JvsonKee/Spotify-Project",
-            linkName: "Spotify Profile",
+            linkName: "TuneTeller",
             technologies: ["Node.js", "React", "Express", "Spotify API"],
             images: [spotDesk, spotMob],
             type: 0
@@ -42,10 +42,12 @@ const Projects = forwardRef((props, ref) => {
     ]
 
     return (
-        <YSlide>
-            <ProjectsContainer ref={ref}>
+        <ProjectsContainer ref={ref}>
+            <YSlide>
                 <ProjectsWrapper>
-                    <Header first="Pro–" second="jects" colour="#ffffff"/>
+                    <YSlide>
+                        <Header first="Pro–" second="jects" colour="#ffffff"/>
+                    </YSlide>
                     <ProjectsList>
                         {
                             projects.map((project, i) => (
@@ -54,8 +56,8 @@ const Projects = forwardRef((props, ref) => {
                         }
                     </ProjectsList>
                 </ProjectsWrapper>
-            </ProjectsContainer>
-        </YSlide>
+            </YSlide>
+        </ProjectsContainer>
     )
 })
 
