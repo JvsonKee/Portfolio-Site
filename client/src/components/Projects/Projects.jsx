@@ -16,7 +16,7 @@ const Projects = forwardRef((props, ref) => {
             description: "A comprehensive web application leveraging the Spotify API, delivering personal insights into listening patterns and preferences",
             link: "https://github.com/JvsonKee/Spotify-Project",
             linkName: "Spotify Profile",
-            technologies: ["Node.js", "React", "Spotify API"],
+            technologies: ["Node.js", "React", "Express", "Spotify API"],
             images: [spotDesk, spotMob],
             type: 0
         },
@@ -34,7 +34,7 @@ const Projects = forwardRef((props, ref) => {
             description: "An intuitive financial management application designed to simplify money management and empower users to track expenses, set budgets, and achieve financial goals effortlessly.",
             link: "https://github.com/JvsonKee/Dime-CPSC471",
             linkName: "Dime",
-            technologies: ["Node.js", "React", "MySQL"],
+            technologies: ["Node.js", "React", "Express", "MySQL"],
             images: [dime],
             type: 2
         }
