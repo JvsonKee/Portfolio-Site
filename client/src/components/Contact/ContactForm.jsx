@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 const FormMatrix = styled.div`
     position: relative;
@@ -54,7 +54,7 @@ export const SubmitButton = styled.input`
     transition: 300ms ease-in-out;
 
     &:hover {
-        background-color: var(--dark-grey);
+        background-color: blue;
     }
 `
 
@@ -91,7 +91,7 @@ export const ResetButton = styled.div`
     }
 
     &:hover {
-        background-color: var(--dark-grey);
+        background-color: blue;
     }
 
     cursor: pointer;
@@ -136,8 +136,6 @@ const ContactForm = () => {
 
     }
 
-
-    console.log({formRef})
     return (
         <FormMatrix>
             

@@ -6,7 +6,6 @@ export const ProjectsContainer = styled.div`
     width: 100%;
     min-height: 100vh;
     background-color: var(--black);
-    margin-top: 100px;
 `
 
 export const ProjectsWrapper = styled.div`
@@ -14,7 +13,7 @@ export const ProjectsWrapper = styled.div`
     flex-direction: column;
     gap: 100px;
     width: 90%;
-    margin: 100px 0;
+    margin: 100px auto;
 `
 
 export const ProjectsList = styled.div`

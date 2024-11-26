@@ -8,15 +8,16 @@ import dime from "../../assets/images/dime-mu.png";
 
 import Project from "./Project";
 import { forwardRef } from "react";
+import YSlide from "../../Animations/YSlide";
 
 const Projects = forwardRef((props, ref) => {
     const projects = [
         {
-            title: "Spotify Profile",
+            title: "TuneTeller",
             description: "A comprehensive web application leveraging the Spotify API, delivering personal insights into listening patterns and preferences",
             link: "https://github.com/JvsonKee/Spotify-Project",
-            linkName: "Spotify Profile",
-            technologies: ["Node.js", "React", "Spotify API"],
+            linkName: "TuneTeller",
+            technologies: ["Node.js", "React", "Express", "Spotify API"],
             images: [spotDesk, spotMob],
             type: 0
         },
@@ -34,7 +35,7 @@ const Projects = forwardRef((props, ref) => {
             description: "An intuitive financial management application designed to simplify money management and empower users to track expenses, set budgets, and achieve financial goals effortlessly.",
             link: "https://github.com/JvsonKee/Dime-CPSC471",
             linkName: "Dime",
-            technologies: ["Node.js", "React", "MySQL"],
+            technologies: ["Node.js", "React", "Express", "MySQL"],
             images: [dime],
             type: 2
         }
@@ -42,16 +43,20 @@ const Projects = forwardRef((props, ref) => {
 
     return (
         <ProjectsContainer ref={ref}>
-            <ProjectsWrapper>
-                <Header first="Pro–" second="jects" colour="#ffffff"/>
-                <ProjectsList>
-                    {
-                        projects.map((project, i) => (
-                            <Project data={project} key={i}/>
-                        ))
-                    }
-                </ProjectsList>
-            </ProjectsWrapper>
+            <YSlide>
+                <ProjectsWrapper>
+                    <YSlide>
+                        <Header first="Pro–" second="jects" colour="#ffffff"/>
+                    </YSlide>
+                    <ProjectsList>
+                        {
+                            projects.map((project, i) => (
+                                <Project data={project} key={i}/>
+                            ))
+                        }
+                    </ProjectsList>
+                </ProjectsWrapper>
+            </YSlide>
         </ProjectsContainer>
     )
 })

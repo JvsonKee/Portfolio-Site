@@ -23,6 +23,17 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         font-weight: 100;
     }
+
+    a {
+        color: var(--black);
+        font-weight: 400;
+        text-decoration: none;
+        transition: 300ms ease-in-out;
+
+        &:hover {
+            color: blue;
+        }
+    }
 `
 
 export default GlobalStyle

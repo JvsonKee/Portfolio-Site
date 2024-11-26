@@ -8,22 +8,20 @@ import NavBar from "../components/NavBar/NavBar";
 import { useRef } from "react";
 
 const Webpage = () => {
-
+    const homeRef = useRef(null);
     const aboutRef = useRef(null);
     const experienceRef = useRef(null);
     const projectsRef = useRef(null);
     const contactRef = useRef(null);
 
     const refs = [
-        aboutRef, experienceRef, projectsRef, contactRef
+        homeRef, aboutRef, experienceRef, projectsRef, contactRef
     ]
-
-    console.log({refs})
 
     return (
         <PageContainer>
-           <NavBar ref={refs} />
-            <HomeIntro />
+            <NavBar ref={refs} />
+            <HomeIntro ref={homeRef}/>
             <About ref={aboutRef}/>
             <Experience ref={experienceRef} />
             <Projects ref={projectsRef}/>
