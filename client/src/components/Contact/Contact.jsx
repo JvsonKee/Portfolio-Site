@@ -7,7 +7,7 @@ import YSlide from "../../Animations/YSlide";
 
 const Contact = forwardRef((props, ref) => {
     return (
-        <SectionContainer ref={ref}>
+        <SectionContainer ref={ref} style={{padding: "70px 0 40px 0"}}>
             <YSlide>
                 <SectionWrapper>
                     <Header first="Con–" second="tact"/>
