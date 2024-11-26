@@ -9,9 +9,10 @@ export const EmailLink = styled.a`
     color: var(--black);
     text-decoration: none;
     transition: 300ms ease-in-out;
+    font-weight: 300;
 
     &:hover {
-        color: var(--dark-grey);
+        color: blue;
     }
 `
 
@@ -22,12 +23,13 @@ export const SocialsContainer = styled.div`
 
     a {
         font-size: 16px;
+        font-weight: 300;
         text-decoration: none;
         color: var(--black);
         transition: 300ms ease-in-out;
 
         &:hover {
-            color: var(--dark-grey);
+            color: blue;
         }
     }
 `
