@@ -14,7 +14,7 @@ const Projects = forwardRef((props, ref) => {
     const projects = [
         {
             title: "TuneTeller",
-            description: "A comprehensive web application leveraging the Spotify API, delivering personal insights into listening patterns and preferences",
+            description: "A comprehensive web application leveraging the Spotify API, delivering personal insights into listening patterns and preferences.",
             link: "https://github.com/JvsonKee/Spotify-Project",
             linkName: "TuneTeller",
             technologies: ["Node.js", "React", "Express", "Spotify API"],
