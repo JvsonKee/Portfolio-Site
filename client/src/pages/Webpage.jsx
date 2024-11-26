@@ -18,8 +18,6 @@ const Webpage = () => {
         homeRef, aboutRef, experienceRef, projectsRef, contactRef
     ]
 
-    console.log({refs})
-
     return (
         <PageContainer>
             <NavBar ref={refs} />
