@@ -15,6 +15,6 @@ export const ResumeLink = styled.a`
     }
 
     &:hover {
-        color: var(--dark-grey);
+        color: blue;
     }
 `
