@@ -8,6 +8,7 @@ import dime from "../../assets/images/dime-mu.png";
 
 import Project from "./Project";
 import { forwardRef } from "react";
+import YSlide from "../../Animations/YSlide";
 
 const Projects = forwardRef((props, ref) => {
     const projects = [
@@ -41,18 +42,20 @@ const Projects = forwardRef((props, ref) => {
     ]
 
     return (
-        <ProjectsContainer ref={ref}>
-            <ProjectsWrapper>
-                <Header first="Pro–" second="jects" colour="#ffffff"/>
-                <ProjectsList>
-                    {
-                        projects.map((project, i) => (
-                            <Project data={project} key={i}/>
-                        ))
-                    }
-                </ProjectsList>
-            </ProjectsWrapper>
-        </ProjectsContainer>
+        <YSlide>
+            <ProjectsContainer ref={ref}>
+                <ProjectsWrapper>
+                    <Header first="Pro–" second="jects" colour="#ffffff"/>
+                    <ProjectsList>
+                        {
+                            projects.map((project, i) => (
+                                <Project data={project} key={i}/>
+                            ))
+                        }
+                    </ProjectsList>
+                </ProjectsWrapper>
+            </ProjectsContainer>
+        </YSlide>
     )
 })
 
