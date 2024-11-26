@@ -11,7 +11,7 @@ export const SectionContainer = styled.div`
     align-items: center;
     justify-content: center;
     width: 90%;
-    min-height: 80vh;
+    min-height: 70vh;
 `
 
 export const SectionWrapper = styled.div`
