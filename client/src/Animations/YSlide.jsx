@@ -7,6 +7,7 @@ export const YSlide = ({ children }) => {
             initial={{ opacity: 0, y: "60px"}}
             whileInView={{ opacity: 1, y: "0px"}}
             transition={{ duration: 0.5, delay: 0.1 }}
+            style={{width: "100%"}}
         >
             {children}
         </motion.div>
